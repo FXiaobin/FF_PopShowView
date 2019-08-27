@@ -1,9 +1,9 @@
 //
 //  ViewController.h
-//  FF_PopShowView
+//  BottomPopController
 //
-//  Created by mac on 2019/8/27.
-//  Copyright © 2019 healifeGroup. All rights reserved.
+//  Created by mac on 2018/11/7.
+//  Copyright © 2018 healifeGroup. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

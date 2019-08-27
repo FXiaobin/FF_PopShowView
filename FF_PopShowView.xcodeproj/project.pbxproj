@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0410FABE231538290032C369 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410FABD231538290032C369 /* AppDelegate.m */; };
-		0410FAC1231538290032C369 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410FAC0231538290032C369 /* ViewController.m */; };
 		0410FAC4231538290032C369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0410FAC2231538290032C369 /* Main.storyboard */; };
 		0410FAC62315382A0032C369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0410FAC52315382A0032C369 /* Assets.xcassets */; };
 		0410FAC92315382A0032C369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0410FAC72315382A0032C369 /* LaunchScreen.storyboard */; };
 		0410FACC2315382A0032C369 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410FACB2315382A0032C369 /* main.m */; };
-		0410FAD62315382A0032C369 /* FF_PopShowViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410FAD52315382A0032C369 /* FF_PopShowViewTests.m */; };
-		0410FAE12315382A0032C369 /* FF_PopShowViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410FAE02315382A0032C369 /* FF_PopShowViewUITests.m */; };
+		0410FAF5231538420032C369 /* ShowAlertPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410FAEF231538420032C369 /* ShowAlertPopViewController.m */; };
+		0410FAF6231538420032C369 /* ShowPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410FAF3231538420032C369 /* ShowPopViewController.m */; };
+		0410FAF7231538420032C369 /* PopCoverBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410FAF4231538420032C369 /* PopCoverBaseViewController.m */; };
+		0410FB00231538F20032C369 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410FAF9231538F20032C369 /* AlertViewController.m */; };
+		0410FB01231538F20032C369 /* PopContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410FAFA231538F20032C369 /* PopContentView.m */; };
+		0410FB02231538F20032C369 /* ShowContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410FAFB231538F20032C369 /* ShowContentViewController.m */; };
+		0410FB03231538F20032C369 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410FAFD231538F20032C369 /* ViewController.m */; };
+		521443B51FB34302F2BB92D3 /* libPods-FF_PopShowViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E02096EF8EC956DAAD4B2F7C /* libPods-FF_PopShowViewUITests.a */; };
+		8218A3FAFB038DBED2A67697 /* libPods-FF_PopShowView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDBED1F9E4C4311D3CAED99 /* libPods-FF_PopShowView.a */; };
+		F5F8411CFCC4A5AB1851C8E0 /* libPods-FF_PopShowViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0538A36CC28476C47DFF97 /* libPods-FF_PopShowViewTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,19 +45,36 @@
 		0410FAB9231538290032C369 /* FF_PopShowView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FF_PopShowView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0410FABC231538290032C369 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0410FABD231538290032C369 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0410FABF231538290032C369 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0410FAC0231538290032C369 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0410FAC3231538290032C369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0410FAC52315382A0032C369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0410FAC82315382A0032C369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0410FACA2315382A0032C369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0410FACB2315382A0032C369 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0410FAD12315382A0032C369 /* FF_PopShowViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FF_PopShowViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0410FAD52315382A0032C369 /* FF_PopShowViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FF_PopShowViewTests.m; sourceTree = "<group>"; };
-		0410FAD72315382A0032C369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0410FADC2315382A0032C369 /* FF_PopShowViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FF_PopShowViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0410FAE02315382A0032C369 /* FF_PopShowViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FF_PopShowViewUITests.m; sourceTree = "<group>"; };
-		0410FAE22315382A0032C369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0410FAEF231538420032C369 /* ShowAlertPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAlertPopViewController.m; sourceTree = "<group>"; };
+		0410FAF0231538420032C369 /* PopCoverBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopCoverBaseViewController.h; sourceTree = "<group>"; };
+		0410FAF1231538420032C369 /* ShowPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPopViewController.h; sourceTree = "<group>"; };
+		0410FAF2231538420032C369 /* ShowAlertPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAlertPopViewController.h; sourceTree = "<group>"; };
+		0410FAF3231538420032C369 /* ShowPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPopViewController.m; sourceTree = "<group>"; };
+		0410FAF4231538420032C369 /* PopCoverBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopCoverBaseViewController.m; sourceTree = "<group>"; };
+		0410FAF8231538F20032C369 /* ShowContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowContentViewController.h; sourceTree = "<group>"; };
+		0410FAF9231538F20032C369 /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
+		0410FAFA231538F20032C369 /* PopContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopContentView.m; sourceTree = "<group>"; };
+		0410FAFB231538F20032C369 /* ShowContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowContentViewController.m; sourceTree = "<group>"; };
+		0410FAFC231538F20032C369 /* PopContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopContentView.h; sourceTree = "<group>"; };
+		0410FAFD231538F20032C369 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0410FAFE231538F20032C369 /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		0410FAFF231538F20032C369 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0B0538A36CC28476C47DFF97 /* libPods-FF_PopShowViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FF_PopShowViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA1D057BD029E9EC0194FA3 /* Pods-FF_PopShowView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_PopShowView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF_PopShowView/Pods-FF_PopShowView.release.xcconfig"; sourceTree = "<group>"; };
+		2FDBED1F9E4C4311D3CAED99 /* libPods-FF_PopShowView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FF_PopShowView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B76F5CDC83D021DE8EE31EE /* Pods-FF_PopShowView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_PopShowView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF_PopShowView/Pods-FF_PopShowView.debug.xcconfig"; sourceTree = "<group>"; };
+		58014C194B8D9F3E0DA15EAF /* Pods-FF_PopShowViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_PopShowViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF_PopShowViewUITests/Pods-FF_PopShowViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		82BBD04954F7C08C0ECA8ACA /* Pods-FF_PopShowViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_PopShowViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF_PopShowViewUITests/Pods-FF_PopShowViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8550D7929B4F061DD21B3AB0 /* Pods-FF_PopShowViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_PopShowViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF_PopShowViewTests/Pods-FF_PopShowViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		94868541631C675AAA57A12A /* Pods-FF_PopShowViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_PopShowViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF_PopShowViewTests/Pods-FF_PopShowViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		E02096EF8EC956DAAD4B2F7C /* libPods-FF_PopShowViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FF_PopShowViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8218A3FAFB038DBED2A67697 /* libPods-FF_PopShowView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F8411CFCC4A5AB1851C8E0 /* libPods-FF_PopShowViewTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521443B51FB34302F2BB92D3 /* libPods-FF_PopShowViewUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				0410FABB231538290032C369 /* FF_PopShowView */,
-				0410FAD42315382A0032C369 /* FF_PopShowViewTests */,
-				0410FADF2315382A0032C369 /* FF_PopShowViewUITests */,
 				0410FABA231538290032C369 /* Products */,
+				5386D3D7F004C3D8F0845EEE /* Pods */,
+				976E9458E77371156A2AE324 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +128,17 @@
 		0410FABB231538290032C369 /* FF_PopShowView */ = {
 			isa = PBXGroup;
 			children = (
+				0410FAEE231538420032C369 /* ShowPopViewController */,
 				0410FABC231538290032C369 /* AppDelegate.h */,
 				0410FABD231538290032C369 /* AppDelegate.m */,
-				0410FABF231538290032C369 /* ViewController.h */,
-				0410FAC0231538290032C369 /* ViewController.m */,
+				0410FAFE231538F20032C369 /* AlertViewController.h */,
+				0410FAF9231538F20032C369 /* AlertViewController.m */,
+				0410FAFC231538F20032C369 /* PopContentView.h */,
+				0410FAFA231538F20032C369 /* PopContentView.m */,
+				0410FAF8231538F20032C369 /* ShowContentViewController.h */,
+				0410FAFB231538F20032C369 /* ShowContentViewController.m */,
+				0410FAFF231538F20032C369 /* ViewController.h */,
+				0410FAFD231538F20032C369 /* ViewController.m */,
 				0410FAC2231538290032C369 /* Main.storyboard */,
 				0410FAC52315382A0032C369 /* Assets.xcassets */,
 				0410FAC72315382A0032C369 /* LaunchScreen.storyboard */,
@@ -114,22 +148,40 @@
 			path = FF_PopShowView;
 			sourceTree = "<group>";
 		};
-		0410FAD42315382A0032C369 /* FF_PopShowViewTests */ = {
+		0410FAEE231538420032C369 /* ShowPopViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0410FAD52315382A0032C369 /* FF_PopShowViewTests.m */,
-				0410FAD72315382A0032C369 /* Info.plist */,
+				0410FAF1231538420032C369 /* ShowPopViewController.h */,
+				0410FAF3231538420032C369 /* ShowPopViewController.m */,
+				0410FAF2231538420032C369 /* ShowAlertPopViewController.h */,
+				0410FAEF231538420032C369 /* ShowAlertPopViewController.m */,
+				0410FAF0231538420032C369 /* PopCoverBaseViewController.h */,
+				0410FAF4231538420032C369 /* PopCoverBaseViewController.m */,
 			);
-			path = FF_PopShowViewTests;
+			path = ShowPopViewController;
 			sourceTree = "<group>";
 		};
-		0410FADF2315382A0032C369 /* FF_PopShowViewUITests */ = {
+		5386D3D7F004C3D8F0845EEE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0410FAE02315382A0032C369 /* FF_PopShowViewUITests.m */,
-				0410FAE22315382A0032C369 /* Info.plist */,
+				4B76F5CDC83D021DE8EE31EE /* Pods-FF_PopShowView.debug.xcconfig */,
+				1AA1D057BD029E9EC0194FA3 /* Pods-FF_PopShowView.release.xcconfig */,
+				8550D7929B4F061DD21B3AB0 /* Pods-FF_PopShowViewTests.debug.xcconfig */,
+				94868541631C675AAA57A12A /* Pods-FF_PopShowViewTests.release.xcconfig */,
+				82BBD04954F7C08C0ECA8ACA /* Pods-FF_PopShowViewUITests.debug.xcconfig */,
+				58014C194B8D9F3E0DA15EAF /* Pods-FF_PopShowViewUITests.release.xcconfig */,
 			);
-			path = FF_PopShowViewUITests;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		976E9458E77371156A2AE324 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FDBED1F9E4C4311D3CAED99 /* libPods-FF_PopShowView.a */,
+				0B0538A36CC28476C47DFF97 /* libPods-FF_PopShowViewTests.a */,
+				E02096EF8EC956DAAD4B2F7C /* libPods-FF_PopShowViewUITests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0410FAE52315382A0032C369 /* Build configuration list for PBXNativeTarget "FF_PopShowView" */;
 			buildPhases = (
+				8B202AA3920FDE1E05940EBB /* [CP] Check Pods Manifest.lock */,
 				0410FAB5231538290032C369 /* Sources */,
 				0410FAB6231538290032C369 /* Frameworks */,
 				0410FAB7231538290032C369 /* Resources */,
@@ -156,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0410FAE82315382A0032C369 /* Build configuration list for PBXNativeTarget "FF_PopShowViewTests" */;
 			buildPhases = (
+				91F6F74D2CB2F42175A974C5 /* [CP] Check Pods Manifest.lock */,
 				0410FACD2315382A0032C369 /* Sources */,
 				0410FACE2315382A0032C369 /* Frameworks */,
 				0410FACF2315382A0032C369 /* Resources */,
@@ -174,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0410FAEB2315382A0032C369 /* Build configuration list for PBXNativeTarget "FF_PopShowViewUITests" */;
 			buildPhases = (
+				3B587F3D7C43C7711887CFAF /* [CP] Check Pods Manifest.lock */,
 				0410FAD82315382A0032C369 /* Sources */,
 				0410FAD92315382A0032C369 /* Frameworks */,
 				0410FADA2315382A0032C369 /* Resources */,
@@ -257,14 +312,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B587F3D7C43C7711887CFAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FF_PopShowViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B202AA3920FDE1E05940EBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FF_PopShowView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91F6F74D2CB2F42175A974C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FF_PopShowViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0410FAB5231538290032C369 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0410FAC1231538290032C369 /* ViewController.m in Sources */,
+				0410FB03231538F20032C369 /* ViewController.m in Sources */,
+				0410FAF6231538420032C369 /* ShowPopViewController.m in Sources */,
+				0410FB02231538F20032C369 /* ShowContentViewController.m in Sources */,
+				0410FB01231538F20032C369 /* PopContentView.m in Sources */,
+				0410FAF7231538420032C369 /* PopCoverBaseViewController.m in Sources */,
 				0410FACC2315382A0032C369 /* main.m in Sources */,
+				0410FAF5231538420032C369 /* ShowAlertPopViewController.m in Sources */,
 				0410FABE231538290032C369 /* AppDelegate.m in Sources */,
+				0410FB00231538F20032C369 /* AlertViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +390,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0410FAD62315382A0032C369 /* FF_PopShowViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +397,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0410FAE12315382A0032C369 /* FF_PopShowViewUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +549,7 @@
 		};
 		0410FAE62315382A0032C369 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B76F5CDC83D021DE8EE31EE /* Pods-FF_PopShowView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +566,7 @@
 		};
 		0410FAE72315382A0032C369 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA1D057BD029E9EC0194FA3 /* Pods-FF_PopShowView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,6 +583,7 @@
 		};
 		0410FAE92315382A0032C369 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8550D7929B4F061DD21B3AB0 /* Pods-FF_PopShowViewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +602,7 @@
 		};
 		0410FAEA2315382A0032C369 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94868541631C675AAA57A12A /* Pods-FF_PopShowViewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -501,6 +621,7 @@
 		};
 		0410FAEC2315382A0032C369 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82BBD04954F7C08C0ECA8ACA /* Pods-FF_PopShowViewUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FF_PopShowViewUITests/Info.plist;
@@ -518,6 +639,7 @@
 		};
 		0410FAED2315382A0032C369 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58014C194B8D9F3E0DA15EAF /* Pods-FF_PopShowViewUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FF_PopShowViewUITests/Info.plist;
